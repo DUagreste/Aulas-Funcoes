@@ -1,18 +1,11 @@
 # Funções - paradigma imperativo
 # Variáveis, atribuições e sequência
 
-# bloco externo
-nome = "Gabriel"    # variável global
+lista = [1, 2, 3, 4, 5]
+print(lista)
 
-
-def minha_funcao():  # bloco interno *corpo da função logo abaixo
-    nome = "Ana"    # variável local
-    tupla = 2, 5, 6, 7, 8
-    print(nome)
-    print(tupla)
-    for x in tupla:
-        print(x)
-
-
-minha_funcao()
-print(nome)
+var_1 = lista.pop()
+var_2 = print("Olá, mundo!")
+print(lista)
+print("Retorno da função pop:", var_1)
+print("Retorno da função print:", var_2)

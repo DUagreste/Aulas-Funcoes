@@ -1,30 +1,20 @@
-# Funções - paradigma imperativo
-# Variáveis, atribuições e sequência
+""" Argumentos nomeados
 
-"""def ola_mundo():
-    return "Olá, mundo"
-
-
-retorno = ola_mundo()
-print(retorno)
-
-def minha_funcao():
-    var = "Maria"
-    return var  # O var de Maria não é definido fora da função
+def imprimir_nome(nome, sobrenome, idade):  # parâmetro
+    print("nome:", nome)
+    print("sobrenome:", sobrenome)
+    print("idade:", idade)
 
 
-print(minha_funcao())
-var = "Ana"
-print(var)
-"""
+imprimir_nome(idade="25", nome="Vitor", sobrenome="Pinheiro")  # argumento"""
+
+# Parâmetro padrão
 
 
-def imprimir_nome(nome):  # parâmetro: valores utilizados para definir
-    # corpo da função
-    print("Olá,", nome)
+def imprimir_nome(nome=None, sobrenome=None, idade=None):
+    print("nome:", nome)
+    print("sobrenome:", sobrenome)
+    print("idade:", idade)
 
 
-nome = input("Qual seu nome? ")
-imprimir_nome(nome)    # argumento: valores de chamada da função
-
-"""Não pode-se passar argumentos a menos ou a mais do que o estabelecido"""
+imprimir_nome()

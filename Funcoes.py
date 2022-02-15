@@ -12,9 +12,15 @@ imprimir_nome(idade="25", nome="Vitor", sobrenome="Pinheiro")  # argumento"""
 
 
 def imprimir_nome(nome=None, sobrenome=None, idade=None):
-    print("nome:", nome)
-    print("sobrenome:", sobrenome)
-    print("idade:", idade)
+    if nome != None:
+        print("nome:", nome)
+        print("sobrenome:", sobrenome)
+        print("idade:", idade)
+        print(15*"-")
+    else:
+        print("Por favor, insira seus dados.")
+        print(15*"-")
 
 
 imprimir_nome()
+imprimir_nome("Vitor", "Pinheiro", 25)

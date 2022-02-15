@@ -9,9 +9,7 @@ def imprimir_nome(nome, sobrenome, idade):  # parâmetro
 imprimir_nome(idade="25", nome="Vitor", sobrenome="Pinheiro")  # argumento"""
 
 # Parâmetro padrão
-
-
-def imprimir_nome(nome=None, sobrenome=None, idade=None):
+"""def imprimir_nome(nome=None, sobrenome=None, idade=None):
     if nome != None:
         print("nome:", nome)
         print("sobrenome:", sobrenome)
@@ -23,4 +21,21 @@ def imprimir_nome(nome=None, sobrenome=None, idade=None):
 
 
 imprimir_nome()
-imprimir_nome("Vitor", "Pinheiro", 25)
+imprimir_nome("Vitor", "Pinheiro", 25)"""
+
+
+def imprimir_movel(nomeImovel, nQuartos, vagasGaragem=None):
+    print("----------------------")
+    print("Título:", nomeImovel)
+    print("Quartos:", nQuartos)
+    if vagasGaragem != None:
+        print("Vagas na garagem:", vagasGaragem)
+
+
+print()
+# Exemplos de Nº ARGUMENTOS <= Nº PARÂMETROS
+imprimir_movel("Kitnet - RN", 2)
+imprimir_movel("Apartamento 2 suítes - SP", 3, 2)
+
+# Exemplos de Nº ARGUMENTOS > Nº PARÂMETROS (vai dar erro)
+imprimir_movel("Casa mobiliada - CE", 5, 3, 2)

@@ -38,7 +38,6 @@ imprimir_movel("Casa mobiliada - CE", 5, 3, 2)"""
 
 # Argumento arbitrário (*args)
 
-
 def imprimir_movel(nomeImovel, nQuartos, vagasGaragem=None, *nBanheiros):
     print("----------------------")
     print("Título:", nomeImovel)
